@@ -21,7 +21,13 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
-
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -107,12 +113,12 @@ body {
   background: #756157;
   border-radius: 4px;
 }
-.newsletter {
+.newsletter-main {
   background-image: url("/images/main/interest-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-.newsletter h2 {
+.newsletter-main h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -121,7 +127,7 @@ body {
   text-transform: uppercase;
 }
 
-.newsletter p {
+.newsletter-main p {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
@@ -140,6 +146,9 @@ body {
 .email {
   background: #F2F2F2;
 }
+.newsletter-form {
+  text-align: center;
+}
 .contacts-number {
   font-size: 40px;
   line-height: 40px;
@@ -148,3 +157,96 @@ body {
   text-decoration: none;
 }
 /* не стал задавать кнопкам на соцсети значения, все равано заменю потом иконками*/
+.catalog-products {
+  background-image: url("/images/catalog/catalog-background.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.catalog-products-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.control-input {
+  color:#ffffff;
+}
+.button-submit {
+  font-weight: 700;
+  color:#ffffff;
+  background: #82B3D3;
+  border-radius: 4px;
+}
+.button-reset {
+  font-weight: 400;
+}
+.select-control {
+  color: #333333;
+  text-transform: inherit;
+}
+.hotels-found {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform:uppercase;
+}
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.button-hotel-card-about {
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #756157;
+  border-radius: 4px;
+}
+.button-favourite {
+  color: #ffffff;
+  background: #82B3D3;
+  border-radius: 4px;
+}
+.button-favourite-select {
+  background: #7DB54F;
+  border-radius: 4px;
+}
+.hotel-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.hotel-card-type {
+  color: #333333;
+}
+.hotel-card-price {
+  color: #333333;
+}
+.newsletter-catalog h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.newsletter-catalog p {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
