@@ -53,6 +53,7 @@ body {
   background-image: url("/images/main/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #000000;
 }
 .underwelcome-wrapper {
   font-weight: 700;
@@ -113,42 +114,6 @@ body {
   background: #756157;
   border-radius: 4px;
 }
-.newsletter-main {
-  background-image: url("/images/main/interest-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-.newsletter-main h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.newsletter-main p {
-  font-size: 22px;
-  line-height: 26px;
-  color: #ffffff;
-  text-align: center;
-}
-.button-newsletter {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  background: #82B3D3;
-  border-radius: 0px 10px 10px 0px;
-}
-.email {
-  background: #F2F2F2;
-}
-.newsletter-form {
-  text-align: center;
-}
 .contacts-number {
   font-size: 40px;
   line-height: 40px;
@@ -161,6 +126,7 @@ body {
   background-image: url("/images/catalog/catalog-background.jpeg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #000000;
 }
 .catalog-products-title {
   font-weight: 700;
@@ -235,18 +201,34 @@ body {
 .hotel-card-price {
   color: #333333;
 }
-.newsletter-catalog h2 {
+.newsletter {
+  background-color: #ffffff;
+  text-align: center;
+}
+.subscribe {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  color: #000000;
+}
+.button-newsletter {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  background: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
 }
 
-.newsletter-catalog p {
-  font-size: 22px;
-  line-height: 26px;
+.newsletter-main {
+  color: #ffffff;
+  background-image: url("/images/main/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+.email {
   color: #333333;
-  text-align: center;
+  background: #F2F2F2;
 }
