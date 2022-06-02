@@ -44,11 +44,15 @@
     </nav>
   </header>
   <main class="main-index">
-    <section class="welcome">
-      <img class="welcome-logo" src="images/main/welcome.svg" width="458" height="352" alt="Добро пожаловать в прекрасную Седону">
-    </section>
-      <h1 class="welcome-about">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p class="welcome-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    <div class="welcome-logo-wrapper">
+      <img class="welcome-logo" src="images/main/welcome.svg" width="458" height="352"
+        alt="Добро пожаловать в прекрасную Седону">
+    </div>
+    <div class="underwelcome-wrapper">
+      <h1 class="underwelcome-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="underwelcome-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    </div>
+
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ol class="advantages-list">
@@ -58,8 +62,7 @@
             <span class="advantages-numeral">— №1 —</span>
             <p class="advantages-description">Cедона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <img class="advantages-image" src="images/main/sedona-town.jpg" width="800" height="384"
-            alt="домик спрятанный в листве">
+          <img class="advantages-image" src="images/main/sedona-town.jpg" width="800" height="384" alt="домик спрятанный в листве">
           <ul class="recommend-list">
             <li class="recommend-item">
               <div class="recommend reccommend-colored">
@@ -113,12 +116,11 @@
         </li>
       </ol>
     </section>
-    <div class="interest">
-      <span class="interest-index-title">Заинтересовались?</span>
-      <span class="interest-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-        Седоне</span>
+    <section class="interest">
+      <h2 class="interest-index-title">Заинтересовались?</h2>
+      <p class="interest-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a class="button button-interest" href="#">Поиск гостиницы в седоне</a>
-    </div>
+    </section>
 
   </main>
   <footer class="page-footer">
@@ -127,7 +129,7 @@
         <p class="newsletter-email">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
-          <input type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email" required>
+          <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email" required>
           <button class="button button-newsletter" type="submit">Подписаться</button>
         </form>
     </section>
