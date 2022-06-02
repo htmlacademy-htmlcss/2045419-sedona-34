@@ -48,14 +48,14 @@ body {
   background: #756157;
   border-radius: 4px;
 }
-.welcome-logo-wrapper {
+.welcome {
   text-align: center;
   background-image: url("/images/main/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #82B3D3;
 }
-.underwelcome-wrapper h1 {
+.welcome-about {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -63,7 +63,7 @@ body {
   text-transform: uppercase;
   background: #ffffff;
 }
-.underwelcome-wrapper p {
+.welcome-reasons {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
