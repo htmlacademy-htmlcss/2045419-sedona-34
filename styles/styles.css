@@ -53,13 +53,14 @@ body {
   background-image: url("/images/main/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: #82B3D3;
 }
-.underwelcome-wrapper {
+.underwelcome-wrapper h1 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
   background: #ffffff;
 }
 .underwelcome-wrapper p {
@@ -126,7 +127,7 @@ body {
   background-image: url("/images/catalog/catalog-background.jpeg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: #82B3D3;
 }
 .catalog-products-title {
   font-weight: 700;
@@ -226,7 +227,7 @@ body {
   background-image: url("/images/main/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: #82B3D3;
 }
 .email {
   color: #333333;
