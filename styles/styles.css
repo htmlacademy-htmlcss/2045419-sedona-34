@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  color: inherit;
+  background: inherit;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.i-want-here {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* добавил фон для того чтобы видеть надпись */
+  background: #756157;
+  border-radius: 4px;
+}
+.welcome-logo-wrapper {
+  text-align: center;
+  background-image: url("../images/main/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #68a2ca;
+  background-size: cover;
+}
+.underwelcome-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #ffffff;
+}
+.underwelcome-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+.advantages-list {
+  color: #333333;
+}
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.reccommend-colored {
+  background: rgba(131, 179, 211, 0.12);
+}
+.listadvantages-photo {
+  background: #82B3D3;
+  color: #ffffff;
+}
+.listadvantages-colored {
+  background: rgba(131, 179, 211, 0.12);
+}
+.listadvantages-normal {
+  background: rgba(131, 179, 211, 0.2);
+}
+.interest {
+  text-align: center;
+}
+.interest-index-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.interest-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+.button-interest {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #756157;
+  border-radius: 4px;
+}
+.contacts-number {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+/* не стал задавать кнопкам на соцсети значения, все равано заменю потом иконками*/
+.catalog-products {
+  background-image: url("../images/catalog/catalog-background.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #68a2ca;
+  background-size: cover;
+}
+.catalog-products-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.control-input {
+  color:#ffffff;
+}
+.button-submit {
+  font-weight: 700;
+  color:#ffffff;
+  background: #82B3D3;
+  border-radius: 4px;
+}
+.button-reset {
+  font-weight: 400;
+}
+.select-control {
+  color: #333333;
+  text-transform: inherit;
+}
+.hotels-found {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform:uppercase;
+}
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.button-hotel-card-about {
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #756157;
+  border-radius: 4px;
+}
+.button-favourite {
+  color: #ffffff;
+  background: #82B3D3;
+  border-radius: 4px;
+}
+.button-favourite-select {
+  background: #7DB54F;
+  border-radius: 4px;
+}
+.hotel-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.hotel-card-type {
+  color: #333333;
+}
+.hotel-card-price {
+  color: #333333;
+}
+.newsletter {
+  background-color: #ffffff;
+  text-align: center;
+}
+.subscribe {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.button-newsletter {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.newsletter-main {
+  color: #ffffff;
+  background-image: url("../images/main/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #68a2ca;
+  background-size: cover;
+}
+.field {
+  background-color: #f2f2f2;
+}
+
