@@ -50,7 +50,7 @@ body {
 }
 .welcome-logo-wrapper {
   text-align: center;
-  background-image: url("/images/main/index-background.jpg");
+  background-image: url("../images/main/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #68a2ca;
@@ -126,7 +126,7 @@ body {
 }
 /* не стал задавать кнопкам на соцсети значения, все равано заменю потом иконками*/
 .catalog-products {
-  background-image: url("/images/catalog/catalog-background.jpeg");
+  background-image: url("../images/catalog/catalog-background.jpeg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #68a2ca;
@@ -227,7 +227,7 @@ body {
 
 .newsletter-main {
   color: #ffffff;
-  background-image: url("/images/main/index-background.jpg");
+  background-image: url("../images/main/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #68a2ca;
