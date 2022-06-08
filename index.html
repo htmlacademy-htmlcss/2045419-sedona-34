@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation-logo" href="index.html">
+      <a class="navigation-logo">
         <img src="images/nav/logo.svg" width="139" height="70" alt="Логотип Седоны">
       </a>
       <ul class="navigation-list">
@@ -53,10 +53,10 @@
       </div>
 
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
+        <h2 class="visually-hidden" hidden>Преимущества</h2>
         <ol class="advantages-list">
           <li class="advantages-item">
-            <div class="advantage-1">
+            <div class="advantage-wrapper">
               <div class="advantages-photo">
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <span class="advantages-numeral">— №1 —</span>
@@ -81,17 +81,16 @@
             </ul>
           </li>
           <li class="advantages-item">
-            <div class="advantage-2">
+            <div class="advantage-wrapper">
+              <img class="advantages-image" src="images/main/devil-bridge.jpg" width="800" height="384"
+              alt="проход между скал выглядящий как мост">
               <div class="advantages-photo">
                 <h3 class="advantages-title">Там есть мост дьявола</h3>
                 <span class="advantages-numeral">— №2 —</span>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img class="advantages-image" src="images/main/devil-bridge.jpg" width="800" height="384"
-                alt="проход между скал выглядящий как мост">
             </div>
           </li>
-          <div class="advantages-block">
             <li class="advantages-item advantages-item-colored">
               <h3 class="advantages-title">Небольшая площадь</h3>
               <span class="advantages-numeral">— №3 —</span>
@@ -107,7 +106,6 @@
               <span class="advantages-numeral">— №5 —</span>
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-          </div>
         </ol>
       </section>
 
@@ -122,7 +120,7 @@
   <footer class="page-footer">
     <section class="newsletter newsletter-main">
       <h2 class="subscribe">Подпишитесь на рассылку</h2>
-      <p class="newsletter-email">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="newsletter-email">Email</label>
         <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email"
@@ -133,7 +131,7 @@
     <div class="footer">
 
       <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+        <h2 class="visually-hidden" hidden>Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
@@ -154,12 +152,12 @@
       </section>
 
       <section class="contacts">
-        <h2 class="visually-hidden">Номер телефона</h2>
+        <h2 class="visually-hidden" hidden>Номер телефона</h2>
         <a class="contacts-number" href="tel.:+78128121212">+7 (812) 812-12-12</a>
       </section>
 
       <section class="made">
-        <h2 class="visually-hidden">Сделано в</h2>
+        <h2 class="visually-hidden" hidden>Сделано в</h2>
         <img src="images/social/made-by.svg">
         <a class="made-link" href="https://htmlacademy.ru/">
         </a>
