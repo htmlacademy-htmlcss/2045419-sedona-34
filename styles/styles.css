@@ -93,8 +93,8 @@ body {
 
 .navigation-link-current {
   padding-left: 17px;
-
 }
+
 .navigation-logo {
   display: block;
   margin-left: 70px;
@@ -128,6 +128,10 @@ body {
   margin: 0 auto;
 }
 
+.welcome-logo {
+  padding-top: 51.4px;
+  padding-bottom: 83.03px;
+}
 .welcome-logo-wrapper {
   text-align: center;
   background-image: url("../images/main/index-background.jpg");
@@ -138,6 +142,9 @@ body {
 }
 
 .underwelcome-title {
+  margin: 0;
+  padding-top: 63px;
+  padding-bottom: 31px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -147,6 +154,8 @@ body {
 }
 
 .underwelcome-text {
+  margin: 0;
+  padding-bottom: 90px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -169,6 +178,7 @@ body {
 }
 
 .advantages-title {
+  padding-bottom: 30px;
   margin: 0;
   font-weight: 700;
   font-size: 24px;
@@ -178,8 +188,18 @@ body {
 
 .recommend-description {
   margin: 0;
+  padding-top: 30px;
+}
+.recommend-icon {
+  padding-bottom: 30px;
+  min-width: 75px;
+  min-height: 72px;
 }
 
+.advantages-description {
+  margin: 0;
+  padding-top: 30px;
+}
 .recommend-title {
   margin: 0;
   font-weight: 700;
@@ -248,9 +268,12 @@ body {
 
 .interest {
   text-align: center;
+  padding-top: 91px;
+  padding-bottom: 93px;
 }
 
 .interest-index-title {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -258,12 +281,18 @@ body {
 }
 
 .interest-text {
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 56px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
 
 .button-interest {
+  display: block;
+  margin: 0 313px 0 313px;
+  padding: 12px 15px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -501,6 +530,8 @@ body {
 }
 
 .button-newsletter {
+  padding: 12 px 15px;
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -513,7 +544,7 @@ body {
 
 .newsletter-main {
   color: #ffffff;
-  background-image: url("../images/main/index-background.jpg");
+  background-image: url("../images/main/interest-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #68a2ca;
@@ -522,6 +553,7 @@ body {
 
 .field {
   background-color: #f2f2f2;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .page-footer {
@@ -540,6 +572,12 @@ body {
   width: 142px;
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  max-width: 48px;
+  max-height: 40px;
 }
 
 .made {
