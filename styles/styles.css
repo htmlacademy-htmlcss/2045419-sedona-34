@@ -66,7 +66,6 @@ body {
   display: flex;
   align-items: center;
   height: 65px;
-  margin: 0 auto;
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -110,9 +109,9 @@ body {
 
 .navigation-user {
   max-width: 264px;
-  margin-left: auto;
   min-width: 18px;
   min-height: 18px;
+  margin-left: auto;
 }
 
 .navigation-search {
@@ -120,16 +119,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-  margin-right: 10px;
 }
 
 .navigation-favorite {
-  width: 15px;
+  padding-right: 40px;
   background-image: url("../images/decoration/favorite.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-  margin-right: 32px;
   position: relative;
 }
 
@@ -527,6 +524,10 @@ body {
   padding: 0;
 }
 
+.catalog-range {
+  margin-bottom: 34px;
+}
+
 .catalog-filter-list {
   list-style-type: none;
   margin: 0;
@@ -541,8 +542,8 @@ body {
   height: 149px;
 }
 
-.catalog-filter-group:nth-child(2) {
-  margin-right: 120px;
+.catalog-filter-group:last-of-type {
+  width: 288px;
 }
 
 .control-input {
@@ -565,6 +566,7 @@ body {
   background-color: #ffffff;
   border-radius: 50%;
 }
+
 .control-mark:focus-visible {
   border: 3px solid #83B3D3;
 }
@@ -582,12 +584,14 @@ body {
 .control-checkbox:focus-visible {
   background-color: rgba(255, 255, 255, 0.6);
 }
+
 .control-checkbox:focus-visible {
- border: 3px solid #83b3d3;
- border-radius: 4px;
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
 }
+
 .control-checkbox:active {
-background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .control-input[type=radio]:checked+.control-mark::before {
@@ -615,13 +619,124 @@ background-color: rgba(255, 255, 255, 0.3);
 
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 32px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+  width: 227px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-input {
+  width: 110px;
+  padding: 14px;
+  padding-left: 19px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background: none;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 4px 0 0 4px;
+
+}
+.range-wrapper-inputs {
+  position: relative;
+}
+.range-wrapper-inputs::before {
+  position: absolute;
+  content: "до";
+  right: 17px;
+  top: 14px;
+  opacity: 0.3;
+}
+.range-wrapper-inputs::after {
+  position: absolute;
+  content: "от";
+  top: 14px;
+  left: 112px;
+  opacity: 0.3;
+}
+.range-input-max {
+  border-radius: 0 4px 4px 0;
+  border-left: 1px;
+}
+.range-input-min {
+  border-right: 1px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.3)
+}
+
+.range-input:focus-visible {
+  box-shadow : 0 0 0 2px#81B3D2, 0 0 0 2px inset #81B3D2;
+  outline: none;
+}
+
+.range-input:active {
+  background: #756257;
+}
+
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.range-toggle:focus-visible {
+  outline: none;
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 .catalog-buttons {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
 }
 
 .button-submit {
+  margin-top: 60px;
+  margin-bottom: 20px;
   padding: 14px 15px;
   font-weight: 700;
   color: #ffffff;
@@ -631,7 +746,6 @@ background-color: rgba(255, 255, 255, 0.3);
 
 .button-reset {
   margin: 0;
-  margin-top: 20px;
   font-weight: 400;
   color: #ffffff;
   text-transform: capitalize;
@@ -669,18 +783,20 @@ background-color: rgba(255, 255, 255, 0.3);
 
 .select-control:hover,
 .select-control:focus-visible {
- box-shadow: inset 0 0 0 2px #68A2CA;
- outline: none;
+  box-shadow: inset 0 0 0 2px #68A2CA;
+  outline: none;
 }
 
 .select-control:active {
   box-shadow: inset 0 0 0 2px #3F5E72;
   outline: none;
 }
+
 .select-control:disabled {
   color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.3);
 }
+
 .sorting {
   padding: 50px 71px 0 71px;
 }
