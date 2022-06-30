@@ -139,7 +139,8 @@
             <li class="footer-social-item">
               <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вк</span>
-                <svg class="social-icon" width="25" height="14" viewBox="0 0 25 14" fill="#83B3D3" xmlns="http://www.w3.org/2000/svg">
+                <svg class="social-icon" width="25" height="14" viewBox="0 0 25 14" fill="#83B3D3"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M24.1 1c.2-.6 0-1-.8-1h-2.6c-.7 0-1 .3-1.1.7 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.7V.9c0-.6-.2-.9-.8-.9h-4c-.5 0-.8.3-.8.6 0 .6 1 .8 1 2.5V7c0 .8 0 1-.4 1-.9 0-3-3.2-4.3-6.9-.3-.7-.5-1-1.2-1H1.6C.8 0 .6.3.6.7c0 .7 1 4.1 4.2 8.6 2.2 3 5.2 4.7 8 4.7 1.7 0 1.9-.4 1.9-1v-2.3c0-.8.2-.9.7-.9.4 0 1 .2 2.6 1.7 1.8 1.7 2 2.5 3 2.5h2.7c.7 0 1.1-.4 1-1.1-.3-.7-1.2-1.8-2.3-3L20.6 8c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z" />
                 </svg>
@@ -148,7 +149,8 @@
             <li class="footer-social-item button-blue">
               <a class="footer-social-link footer-social-tg" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм</span>
-                <svg class="social-icon" width="18" height="16" viewBox="0 0 18 16" fill="#83B3D3" xmlns="http://www.w3.org/2000/svg">
+                <svg class="social-icon" width="18" height="16" viewBox="0 0 18 16" fill="#83B3D3"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M16.8.1.8 6.2c-1 .5-1 1-.2 1.4l4.1 1.2 9.5-6c.5-.2.9 0 .5.2l-7.6 7-.3 4.2c.4 0 .6-.2.8-.4l2-2 4.1 3c.8.5 1.3.3 1.5-.6L18 1.4c.3-1.1-.4-1.6-1.1-1.3Z" />
                 </svg>
@@ -157,7 +159,8 @@
             <li class="footer-social-item">
               <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyry">
                 <span class="visually-hidden">Ютуб</span>
-                <svg class="social-icon" width="23" height="18" viewBox="0 0 23 18" fill="#83B3D3" xmlns="http://www.w3.org/2000/svg">
+                <svg class="social-icon" width="23" height="18" viewBox="0 0 23 18" fill="#83B3D3"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M19 .5H3.4C1.6.5.3 2.1.3 3.9v10c0 2 1.3 3.6 3.2 3.6h15.7c1.6 0 3.1-1.6 3.1-3.4V3.9C22.1 2.1 20.8.5 19 .5ZM8 13V5l7.3 4L8 13Z" />
                 </svg>
@@ -182,6 +185,63 @@
         </section>
       </div>
     </footer>
+  </div>
+  <div class="modal-container">
+    <div class="modal modal-booking">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск Гостиницы в Седоне</h2>
+        <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
+          <p class="field-group">
+            <label for="booking-check-in">Дата Заезда:</label>
+            <input class="booking-form-field field" type="text" id="booking-check-in" name="booking-check-in"
+              placeholder="Укажите дату" value="27 апреля 2020" required>
+            <span class="modal-info info-error">Мы не можем отправить вас в прошлое.</span>
+          </p>
+          <p class="field-group">
+            <label for="booking-check-out">Дата Выезда:</label>
+            <input class="booking-form-field field" type="text" id="booking-check-out" name="booking-check-out"
+              placeholder="Укажите дату" value="1 сентября 2021" required>
+            <span class="modal-info info-success">На эти даты есть свободные номера. Пока есть.</span>
+          </p>
+          <div class="extra-option extra-option-adult">
+            <label for="adult-number">Взрослые:</label>
+            <div class="counter-container">
+              <button class="counter-button" type="button">
+                <span class="visually-hidden">уменьшить количество</span>
+                <span class="counter-box"></span>
+              </button>
+              <input class="counter-input counter-input-adult" type="number" id="adult-number" value="2">
+              <button class="counter-button" type="button">
+                <span class="visually-hidden">увеличить количество</span>
+                <span class="counter-box counter-box-plus"></span>
+              </button>
+            </div>
+          </div>
+          <div class="extra-option extra-option-children">
+            <label for="children-number">Дети:</label>
+            <button type="button" class="children-info">
+              <span class="children-info-modal children-info-modal-closed">Укажите количество детей,<br> которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </button>
+            <div class="counter-container">
+              <button class="counter-button" type="button">
+                <span class="visually-hidden">уменьшить количество</span>
+                <span class="counter-box"></span>
+              </button>
+              <input class="counter-input counter-input-children" type="number" id="children-number" value="1">
+              <button class="counter-button" type="button">
+                <span class="visually-hidden">увеличить количество</span>
+                <span class="counter-box counter-box-plus"></span>
+              </button>
+            </div>
+
+          </div>
+          <button class="button button-blue button-search" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
   </div>
 </body>
 
