@@ -190,26 +190,53 @@
     <div class="modal modal-booking">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
-        <svg width="13" height="13" viewBox="0 0 13 13" fill="000" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
-        </svg>
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск Гостиницы в Седоне</h2>
         <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
           <p class="field-group">
             <label for="booking-check-in">Дата Заезда:</label>
-            <input class="booking-form-field field" type="date" id="booking-check-in" placeholder="Укажите дату" value="27 апреля 2020" required>
+            <input class="booking-form-field field" type="text" id="booking-check-in" name="booking-check-in"
+              placeholder="Укажите дату" value="27 апреля 2020" required>
+            <span class="modal-info info-error">Мы не можем отправить вас в прошлое.</span>
           </p>
           <p class="field-group">
             <label for="booking-check-out">Дата Выезда:</label>
-            <input class="booking-form-field field" type="date" id="booking-check-out" placeholder="Укажите дату" value="1 сентября 2021" required>
+            <input class="booking-form-field field" type="text" id="booking-check-out" name="booking-check-out"
+              placeholder="Укажите дату" value="1 сентября 2021" required>
+            <span class="modal-info info-success">На эти даты есть свободные номера. Пока есть.</span>
           </p>
-          <div class="extra-options">
-            <label for="adult-number">Взрослые</label>
-            <input class="adult" type="number" id="adult-number" value="2">
-            <label for="children-number">Дети</label>
-            <input class="children" type="number" id="children-number" value="1">
+          <div class="extra-option extra-option-adult">
+            <label for="adult-number">Взрослые:</label>
+            <div class="counter-container">
+              <button class="counter-button" type="button">
+                <span class="visually-hidden">уменьшить количество</span>
+                <span class="counter-box"></span>
+              </button>
+              <input class="counter-input counter-input-adult" type="number" id="adult-number" value="2">
+              <button class="counter-button" type="button">
+                <span class="visually-hidden">увеличить количество</span>
+                <span class="counter-box counter-box-plus"></span>
+              </button>
+            </div>
+          </div>
+          <div class="extra-option extra-option-children">
+            <label for="children-number">Дети:</label>
+            <button type="button" class="children-info">
+              <span class="children-info-modal children-info-modal-closed">Укажите количество детей,<br> которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </button>
+            <div class="counter-container">
+              <button class="counter-button" type="button">
+                <span class="visually-hidden">уменьшить количество</span>
+                <span class="counter-box"></span>
+              </button>
+              <input class="counter-input counter-input-children" type="number" id="children-number" value="1">
+              <button class="counter-button" type="button">
+                <span class="visually-hidden">увеличить количество</span>
+                <span class="counter-box counter-box-plus"></span>
+              </button>
+            </div>
+
           </div>
           <button class="button button-blue button-search" type="submit">Найти</button>
         </form>
