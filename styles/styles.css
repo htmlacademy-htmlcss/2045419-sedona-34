@@ -887,13 +887,14 @@ body {
   box-shadow: 0 0 0 2px inset #000000;
 }
 
+.button-card-style:focus {
+  box-shadow: 0 0 0 2px inset #68A2CA;
+}
+
 .button-card-style:active {
   box-shadow: 0 0 0 2px inset #000000;
 }
 
-.button-card-style:focus {
-  box-shadow: 0 0 0 2px inset #68A2CA;
-}
 
 .hotel-card-list {
   padding: 0;
