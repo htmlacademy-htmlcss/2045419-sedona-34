@@ -675,7 +675,7 @@ body {
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   border-radius: 4px 0 0 4px;
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
 }
 
 .range-input:disabled {
@@ -1478,6 +1478,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
+  -moz-appearance: textfield;
 }
 
 .counter-input:hover {
