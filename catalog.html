@@ -58,7 +58,8 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
               <span class="visually-hidden">Главная</span>
-              <svg width="12" height="12" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <svg width="12" height="12" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="m.16 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z" />
               </svg>
@@ -122,7 +123,7 @@
               </li>
             </ul>
           </fieldset>
-<!-- price-filter -->
+          <!-- price-filter -->
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title catalog-range">Стоимость, ₽:</legend>
             <div class="range">
@@ -138,8 +139,12 @@
               </div>
               <div class="range-scale">
                 <div class="range-bar">
-                  <button type="button" class="range-toggle toggle-min"></button>
-                  <button type="button" class="range-toggle toggle-max"></button>
+                  <button type="button" class="range-toggle toggle-min">
+                    <span class="visually-hidden">выбор минимальной цены.</span>
+                  </button>
+                  <button type="button" class="range-toggle toggle-max">
+                    <span class="visually-hidden">выбор максимальной цены.</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -161,8 +166,10 @@
           </select>
           <ul class="card-style-list">
             <li>
-              <a class="button button-card-style button-card-style-current" href="#">
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <button class="button button-card-style button-card-style-current" type="button">
+                <span class="visually-hidden">показать сеткой.</span>
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" focusable="false">
                   <path d="M4 0H0V6H4V0Z" fill="black" />
                   <path d="M16 0H12V6H16V0Z" fill="black" />
                   <path d="M10 0H6V6H10V0Z" fill="black" />
@@ -170,19 +177,23 @@
                   <path d="M16 8H12V14H16V8Z" fill="black" />
                   <path d="M10 8H6V14H10V8Z" fill="black" />
                 </svg>
-              </a>
+              </button>
             </li>
             <li>
-              <a class="button button-card-style" href="#">
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <button class="button button-card-style" type="button">
+                <span class="visually-hidden">показать слайдшоу.</span>
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" focusable="false">
                   <path d="M16 12H0V14H16V12Z" fill="black" />
                   <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
                 </svg>
-              </a>
+              </button>
             </li>
             <li>
-              <a class="button button-card-style" href="#">
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <button class="button button-card-style" type="button">
+                <span class="visually-hidden">показать списком.</span>
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" focusable="false">
                   <path d="M2 0H0V2H2V0Z" fill="black" />
                   <path d="M16 0H4V2H16V0Z" fill="black" />
                   <path d="M2 4H0V6H2V4Z" fill="black" />
@@ -192,7 +203,7 @@
                   <path d="M2 12H0V14H2V12Z" fill="black" />
                   <path d="M16 12H4V14H16V12Z" fill="black" />
                 </svg>
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -322,7 +333,7 @@
           <button class="button button-newsletter button-blue" type="submit">Подписаться</button>
         </form>
       </section>
-<!-- social -->
+      <!-- social -->
       <div class="footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
@@ -359,7 +370,7 @@
             </li>
           </ul>
         </section>
-<!-- contacts -->
+        <!-- contacts -->
         <section class="contacts">
           <h2 class="visually-hidden">Номер телефона</h2>
           <a class="contacts-number" href="tel.:+78128121212">+7 (812) 812-12-12</a>
