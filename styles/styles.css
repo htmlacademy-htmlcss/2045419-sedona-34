@@ -183,6 +183,7 @@ body {
 
 .button-brown:focus {
   background: #615048;
+  outline: none;
 }
 
 .button-brown:active {
@@ -196,6 +197,7 @@ body {
 
 .button-blue:focus {
   background: #68A2CA;
+  outline: none;
 }
 
 .button-blue:active {
@@ -431,11 +433,18 @@ body {
   border-radius: 4px;
 }
 
+.contacts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 370px;
+}
+
 .contacts-number {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 331px;
   font-size: 40px;
   line-height: 40px;
@@ -450,6 +459,7 @@ body {
 
 .contacts-number:focus {
   color: #756157;
+  outline: none;
 }
 
 .contacts-number:active {
@@ -827,8 +837,8 @@ body {
 .select-control-quantity {
   width: 160px;
   min-height: 49px;
-  margin-left: 48px;
-  margin-top: 10px;
+  margin-left: 47px;
+  margin-top: -2px;
 }
 
 .select-control:hover,
@@ -877,6 +887,7 @@ body {
   box-shadow: 0 0 0 2px inset #E5E5E5;
   border-radius: 2px;
   outline: none;
+  background-color: transparent;
 }
 
 .button-card-style-current {
@@ -968,6 +979,7 @@ body {
 
 .button-hotel-card-about {
   min-width: 140px;
+  max-width: 140px;
   padding: 8px 5px;
   font-weight: 700;
   color: #ffffff;
@@ -981,6 +993,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   min-width: 140px;
+  max-width: 140px;
   padding: 8px 5px;
   color: #ffffff;
   font-size: 16px;
@@ -999,6 +1012,7 @@ body {
 
 .button-favourite-select:focus {
   background: #6C9E42;
+  outline: none;
 }
 
 .button-favourite-select:active {
@@ -1094,10 +1108,12 @@ body {
   background: #68A2CA;
   box-shadow: 0 0 0 1px inset #82B3D3;
   border-radius: 4px;
+  outline: none;
 }
 
 .pagination-link:active {
   background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-link-current,
@@ -1242,6 +1258,10 @@ body {
   fill: #68A2CA;
 }
 
+.footer-social-link:focus {
+  outline: none;
+}
+
 .footer-social-link:active .social-icon {
   fill: #82B3D3;
 }
@@ -1268,6 +1288,7 @@ body {
 
 .made-link:focus {
   fill: #756157;
+  outline: none;
 }
 
 .made-link:active {
